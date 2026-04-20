@@ -1,0 +1,42 @@
+WEBVTT
+
+NOTE
+Extended Audio Description demo.
+Mux: Pouring coffee into a cup.
+https://stream.mux.com/Ofjb...
+Duration: 01:38.
+
+
+0
+00:00:00.000 --> 00:00:00.600
+{
+  "justA": "test"
+}
+
+1
+00:00:02.500 --> 00:00:03.500
+{
+  "pauseMedia": 6800,
+  "text": "A white china coffee cup and saucer sit on a table with a black and white checked tablecloth."
+}
+
+2
+00:00:06.000 --> 00:00:07.000
+{
+  "pauseMedia": 6500,
+  "text": "Black coffee is poured in slow motion from a glass jug into the cup."
+}
+
+3
+00:00:10.000 --> 00:00:11.000
+{
+  "pauseMedia": 6800,
+  "text": "A chocolate cake with icing and a red cherry on top is behind and to the right of the cup and saucer."
+}
+
+4
+00:00:15.000 --> 00:00:16.000
+{
+  "pauseMedia": 6500,
+  "text": "Also on the table to the left are a yellow ring-bound note book with a pen on top."
+}
