@@ -6,6 +6,6 @@
     "./tracks/*.vtt": "./tracks/*.vtt"
   },
   "scripts": {
-    "test": "node ./test/index.js"
+    "test": "node ./test/index.js; echo $?"
   }
 }

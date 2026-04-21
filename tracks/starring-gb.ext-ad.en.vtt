@@ -1,0 +1,49 @@
+WEBVTT
+
+NOTE
+Extended Audio Description demo - (Version 2)
+Title: "Starring Great Britain …"
+https://www.youtu.be/ezrfJus7f3g
+Duration: 04:08 (background music)
+
+
+VB EAD 0
+00:00:00.000 --> 00:00:00.600
+{
+  "justA": "test"
+}
+
+VB EAD 1
+00:00:02.000 --> 00:00:03.000
+{
+  "pauseMedia": 7000,
+  "text": "A GREAT BRITAIN production with: Netflix, Sony, Marvel, Disney … (too many to mention!)"
+}
+
+VB EAD 2
+00:00:05.000 --> 00:00:06.000
+{
+  "pauseMedia": 7000,
+  "text": "Zendaya as M-J with Ned Leeds on the top deck of a red open-top tourist bus crossing Tower Bridge in London."
+}
+
+VB EAD 4
+00:00:13.000 --> 00:00:14.000
+{
+  "pauseMedia": 7000,
+  "text": "An explosion. Spiderman swoops into view."
+}
+
+VB EAD 5
+00:00:21.000 --> 00:00:22.000
+{
+  "pauseMedia": 7000,
+  "text": "A young lady wearing earplugs listens to an audio guide, oblivious to the chaos around her."
+}
+
+VB EAD 6
+00:00:24.000 --> 00:00:25.000
+{
+  "pauseMedia": 7000,
+  "text": "She snaps a photograph, just as Spiderman is framed by her camera."
+}
