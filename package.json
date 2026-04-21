@@ -4,5 +4,8 @@
   "exports": {
     ".": "./index.js",
     "./tracks/*.vtt": "./tracks/*.vtt"
+  },
+  "scripts": {
+    "test": "node ./test/index.js"
   }
 }
