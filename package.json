@@ -6,6 +6,7 @@
     "./tracks/*.vtt": "./tracks/*.vtt"
   },
   "scripts": {
+    "build": "node ./scripts/badge-svg.js > badge.svg",
     "test": "node ./test/index.js; echo $?"
   }
 }

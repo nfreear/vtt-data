@@ -1,0 +1,46 @@
+WEBVTT
+
+NOTE
+Demostración de audiodescripción extendida - Española (ES)
+Mux: Verter café en una taza.
+https://stream.mux.com/Ofjb...
+Duración: 01:49.
+
+
+0
+00:00:00.000 --> 00:00:00.600
+{
+  "justA": "test"
+}
+
+1
+00:00:02.500 --> 00:00:03.500
+{
+  "pauseMedia": 7500,
+  "text": "Una taza y un platillo de porcelana blanca reposan sobre una mesa redonda con un mantel a cuadros blancos y negros.",
+  "EN": "A white china coffee cup and saucer sit on a round table with a black and white checked tablecloth."
+}
+
+2
+00:00:06.000 --> 00:00:07.000
+{
+  "pauseMedia": 7000,
+  "text": "El café negro se vierte lentamente desde una jarra de cristal hasta el centro de la taza.",
+  "EN": "Black coffee is poured in slow motion from a glass jug into the centre of the cup."
+}
+
+3
+00:00:10.000 --> 00:00:11.000
+{
+  "pauseMedia": 7500,
+  "text": "Detrás y a la derecha de la taza y el platillo hay un pastel de chocolate con glaseado y una cereza roja encima.",
+  "EN": "A chocolate cake with icing and a red cherry on top is behind and to the right of the cup and saucer."
+}
+
+4
+00:00:15.000 --> 00:00:16.000
+{
+  "pauseMedia": 7000,
+  "text": "También sobre la mesa de la izquierda hay un cuaderno amarillo de anillas con un bolígrafo encima.",
+  "EN": "Also on the table to the left is a yellow ring-bound note book with a pen on top."
+}

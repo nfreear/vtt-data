@@ -8,6 +8,7 @@ const DATA = [
     rights: '© VisitBritain 2026. All rights reserved.',
     mediaUrl: 'https://www.youtube.com/watch?v=HgHj3g68Tr4',
     trackUrl: import.meta.resolve('./tracks/visit-britain-downton-v2.ext-ad.en.vtt'),
+    language: 'en',
     note: 'Background music. Some spoken audio.',
     extendedADRequired: true,
     duration: '01:39',
@@ -18,6 +19,7 @@ const DATA = [
     rights: '© VisitBritain 2026. All rights reserved.',
     mediaUrl: 'https://www.youtube.com/watch?v=HgHj3g68Tr4',
     trackUrl: import.meta.resolve('./tracks/visit-britain-downton.ext-ad.en.vtt'),
+    language: 'en',
     duration: '01:39',
     provider: 'youtube'
   }, {
@@ -26,16 +28,27 @@ const DATA = [
     rights: '© VisitBritain 2026. All rights reserved.',
     mediaUrl: 'https://www.youtube.com/watch?v=ezrfJus7f3g',
     trackUrl: import.meta.resolve('./tracks/starring-gb.ext-ad.en.vtt'),
+    language: 'en',
     duration: '04:08',
     provider: 'youtube'
   }, {
     id: 'mux:coffee',
-    title: 'Mux: Pouring coffee into a cup.',
+    title: 'Mux: Pouring coffee into a cup (en)',
     rights: 'unknown',
     mediaUrl: 'https://stream.mux.com/OfjbQ3esQifgboENTs4oDXslCP5sSnst/high.mp4',
     trackUrl: import.meta.resolve('./tracks/mux-pour-coffee.ext-ad.en.vtt'),
+    language: 'en',
     note: 'Continuous background music. No spoken audio.',
     extendedADRequired: true,
+    duration: '01:49',
+    provider: 'video'
+  }, {
+    id: 'mux:cafe.es',
+    title: 'Mux: Verter café en una taza (es)',
+    rights: 'unknown',
+    mediaUrl: 'https://stream.mux.com/OfjbQ3esQifgboENTs4oDXslCP5sSnst/high.mp4',
+    trackUrl: import.meta.resolve('./tracks/mux-verter-cafe.ext-ad.es.vtt'),
+    language: 'es',
     duration: '01:49',
     provider: 'video'
   }
