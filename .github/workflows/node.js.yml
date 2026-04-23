@@ -1,5 +1,5 @@
 # https://github.com/actions/starter-workflows/blob/main/ci/node.js.yml
-name: Deploy VTT
+name: VTT Deploy
 
 on:
   push:

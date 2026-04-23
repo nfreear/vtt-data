@@ -8,8 +8,7 @@ console.log(badgeSvg(DATA.length));
  * @see https://img.shields.io/badge/vtt_tracks-010-blue
  */
 function badgeSvg (count = '010', label = 'VTT tracks') {
-  return `
-<svg xmlns="http://www.w3.org/2000/svg" width="94" height="20" role="img"
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="94" height="20" role="img"
   aria-label="${label}: ${count}" >
   <title>${label}: ${count}</title>
   <linearGradient id="s" x2="0" y2="100%">

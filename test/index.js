@@ -1,14 +1,15 @@
 /**
  * Basic unit tests - using the "node:assert" library.
+ *
+ * @see https://nodejs.org/api/assert.html
  */
 import { strict as assert } from 'node:assert';
-// import { MetaVttParser } from 'audio-describe';
+import parseVttFile from './parseVttFile.js';
 import { DATA, findVideo } from '../index.js';
-
-// console.log('Parser:', MetaVttParser);
 
 testFound();
 testAll();
+// testParser();
 
 function testFound () {
   const found = findVideo('mux:coffee');
@@ -24,18 +25,30 @@ function testFound () {
   console.log('✅ Test found passed OK');
 }
 
-function testAll () {
+async function testAll () {
   assert.equal(DATA.length, 5, 'Expecting 5 videos in array');
   // Was: console.assert(DATA.length === 5, 'Expecting 4 videos in array');
 
-  DATA.forEach((it) => {
+  const promises = await DATA.map(async (it, idx) => {
     const mediaURL = new URL(it.mediaUrl);
+    const { entries } = await parseVttFile(it.trackUrl);
+
+    console.log('>', idx, it.title, entries.length);
 
     assert.equal(typeof it.mediaUrl, 'string', 'Expecting a mediaUrl (all)');
     assert.equal(typeof it.trackUrl, 'string', 'Expecting a trackUrl (all)');
     assert.match(mediaURL.host, /(youtube|vimeo|mux)\.com$/, 'Expecting a mediaUrl (all)');
     assert.match(it.trackUrl, /[\w-\.]+\.(en|es)\.vtt/, 'Expecting a trackUrl (all)')
     assert.match(it.language, /en|es/, 'Expecting multi-lang (en, es) (all)');
+    assert.ok(entries.length > 1, 'Expecting multiple VTT entries (all)')
   });
+  await Promise.all(promises);
+
   console.log('✅ Test all passed OK');
+}
+
+export async function testParser () {
+  const found = findVideo('mux:coffee');
+  const { entries } = await parseVttFile(found.trackUrl);
+  console.log('VTT entries - mux:coffee:', entries.length);
 }

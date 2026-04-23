@@ -1,5 +1,6 @@
 {
   "private": true,
+  "name": "@nfreear/vtt-data",
   "type": "module",
   "exports": {
     ".": "./index.js",
@@ -8,5 +9,8 @@
   "scripts": {
     "build": "node ./scripts/badge-svg.js > badge.svg",
     "test": "node ./test/index.js; echo $?"
+  },
+  "devDependencies": {
+    "audio-describe": "^0.8.2"
   }
 }

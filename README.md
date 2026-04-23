@@ -1,9 +1,11 @@
 [![VTT Deploy][ci-badge]][ci]
-[![VTT track count][count-badge]][vtt-data]
+[![VTT Tracks][count-badge]][vtt-data]
 
 # Vendor VTT
 
-Demonstration WebVTT tracks that are copyright © to third-party publishers.
+Demonstration [WebVTT][] tracks that are copyright © to third-party publishers.
+
+__NOT released as open source or open content.__
 
 Used in:
 
@@ -14,6 +16,8 @@ Used in:
 [code]: https://github.com/nfreear/audio-describe.git
 [vtt-data]: https://github.com/nfreear/vtt-data.git
 
+[webvtt]: https://www.w3.org/TR/webvtt1/
+  "WebVTT: The Web Video Text Tracks Format, W3C Candidate Recommendation, 4 April 2019."
 [DeepL]: https://www.deepl.com/en
 [G translate]: https://translate.google.com/?sl=auto&tl=es&op=translate
 
