@@ -35,12 +35,13 @@ async function testAll () {
 
     console.log('>', idx, it.title, entries.length);
 
+    assert.ok(it.id, 'Exupecting an id (all)');
     assert.equal(typeof it.mediaUrl, 'string', 'Expecting a mediaUrl (all)');
     assert.equal(typeof it.trackUrl, 'string', 'Expecting a trackUrl (all)');
     assert.match(mediaURL.host, /(youtube|vimeo|mux)\.com$/, 'Expecting a mediaUrl (all)');
-    assert.match(it.trackUrl, /[\w-\.]+\.(en|es)\.vtt/, 'Expecting a trackUrl (all)')
+    assert.match(it.trackUrl, /[\w-.]+\.(en|es)\.vtt/, 'Expecting a trackUrl (all)');
     assert.match(it.language, /en|es/, 'Expecting multi-lang (en, es) (all)');
-    assert.ok(entries.length > 1, 'Expecting multiple VTT entries (all)')
+    assert.ok(entries.length > 1, 'Expecting multiple VTT entries (all)');
   });
   await Promise.all(promises);
 

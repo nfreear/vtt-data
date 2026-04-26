@@ -9,6 +9,7 @@ const DATA = [
     mediaUrl: 'https://www.youtube.com/watch?v=HgHj3g68Tr4',
     trackUrl: import.meta.resolve('./tracks/visit-britain-downton-v2.ext-ad.en.vtt'),
     language: 'en',
+    moreUrl: 'https://www.visitbritain.com/en/things-to-do/period-drama-filming-locations',
     note: 'Background music. Some spoken audio.',
     extendedADRequired: true,
     duration: '01:39',

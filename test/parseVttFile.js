@@ -8,8 +8,8 @@ export default async function parseVttFile (filePath) {
   const parser = new MetaVttParser();
   try {
     return parser.parse(rawString);
-  } catch {
+  } catch (err) {
     console.error('Error. VTT Track:', filePath);
-    throw(err);
+    throw (err);
   }
 }
