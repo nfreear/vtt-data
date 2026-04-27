@@ -40,3 +40,31 @@ Duration: 01:49.
   "pauseMedia": 6500,
   "text": "Also on the table to the left is a yellow ring-bound note book with a pen on top."
 }
+
+5
+00:00:24.000 --> 00:00:25.000
+{
+  "pauseMedia": 6000,
+  "text": "The coffee keeps pouring, and the cup is almost full."
+}
+
+6
+00:00:37.000 --> 00:00:38.000
+{
+  "pauseMedia": 6500,
+  "text": "The coffee starts to overflow down the outside of the cup and into the saucer."
+}
+
+7
+00:00:42.000 --> 00:00:43.000
+{
+  "pauseMedia": 6500,
+  "text": "Still the coffee keeps pouring and overflowing."
+}
+
+8
+00:01:11.000 --> 00:01:12.000
+{
+  "pauseMedia": 6500,
+  "text": "Now the saucer overflows. Coffee drips onto the table-cloth."
+}
