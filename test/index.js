@@ -4,7 +4,7 @@
  * @see https://nodejs.org/api/assert.html
  */
 import { strict as assert } from 'node:assert';
-import parseVttFile from './parseVttFile.js';
+import parseVttFile from './util/parseVttFile.js';
 import { DATA, findVideo } from '../index.js';
 
 testFound();
@@ -26,7 +26,7 @@ function testFound () {
 }
 
 async function testAll () {
-  assert.equal(DATA.length, 5, 'Expecting 5 videos in array');
+  assert.equal(DATA.length, 6, 'Expecting 5 videos in array');
   // Was: console.assert(DATA.length === 5, 'Expecting 4 videos in array');
 
   const promises = await DATA.map(async (it, idx) => {

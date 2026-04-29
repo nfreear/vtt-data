@@ -8,7 +8,9 @@
   },
   "scripts": {
     "build": "node ./scripts/badge-svg.js > badge.svg",
-    "test": "node ./test/index.js; echo $?"
+    "test": "node ./test/index.js",
+    "test:js": "node ./test/harness.js",
+    "test:old": "node ./test/index.js; echo $?"
   },
   "devDependencies": {
     "audio-describe": "^0.8.2"
