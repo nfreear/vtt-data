@@ -1,8 +1,11 @@
+import videoData from 'audio-describe/data';
 import DATA from '../index.js';
 
-console.warn('VTT track count:', DATA.length);
+const allData = [...DATA, ...videoData];
 
-console.log(badgeSvg(DATA.length));
+console.warn('VTT track count:', allData.length);
+
+console.log(badgeSvg(allData.length));
 
 /**
  * @see https://img.shields.io/badge/vtt_tracks-010-blue
