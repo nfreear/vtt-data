@@ -13,6 +13,6 @@
     "test:old": "node ./test/index.js; echo $?"
   },
   "devDependencies": {
-    "audio-describe": "^0.8.2"
+    "audio-describe": "^0.9.1"
   }
 }

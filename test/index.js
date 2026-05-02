@@ -5,7 +5,10 @@
  */
 import { strict as assert } from 'node:assert';
 import parseVttFile from './util/parseVttFile.js';
+import videoData from 'audio-describe/data';
 import { DATA, findVideo } from '../index.js';
+
+const allData = [...DATA, ...videoData];
 
 testFound();
 testAll();
@@ -26,10 +29,10 @@ function testFound () {
 }
 
 async function testAll () {
-  assert.equal(DATA.length, 6, 'Expecting 5 videos in array');
+  assert.equal(allData.length, 7, 'Expecting 7 videos in array');
   // Was: console.assert(DATA.length === 5, 'Expecting 4 videos in array');
 
-  const promises = await DATA.map(async (it, idx) => {
+  const promises = await allData.map(async (it, idx) => {
     const mediaURL = new URL(it.mediaUrl);
     const { entries } = await parseVttFile(it.trackUrl);
 
