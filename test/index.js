@@ -29,7 +29,7 @@ function testFound () {
 }
 
 async function testAll () {
-  assert.equal(allData.length, 7, 'Expecting 7 videos in array');
+  assert.equal(allData.length, 8, 'Expecting 8 videos in array');
   // Was: console.assert(DATA.length === 5, 'Expecting 4 videos in array');
 
   const promises = await allData.map(async (it, idx) => {
@@ -38,10 +38,10 @@ async function testAll () {
 
     console.log('>', idx, it.title, entries.length);
 
-    assert.ok(it.id, 'Exupecting an id (all)');
+    assert.ok(it.id, 'Expecting an id (all)');
     assert.equal(typeof it.mediaUrl, 'string', 'Expecting a mediaUrl (all)');
     assert.equal(typeof it.trackUrl, 'string', 'Expecting a trackUrl (all)');
-    assert.match(mediaURL.host, /(youtube|vimeo|mux)\.com$/, 'Expecting a mediaUrl (all)');
+    assert.match(mediaURL.host, /(freesound|youtube|vimeo|mux)\.(com|org)$/, 'Expecting a mediaUrl (all)');
     assert.match(it.trackUrl, /[\w-.]+\.(en|es)\.vtt/, 'Expecting a trackUrl (all)');
     assert.match(it.language, /en|es/, 'Expecting multi-lang (en, es) (all)');
     assert.ok(entries.length > 1, 'Expecting multiple VTT entries (all)');
