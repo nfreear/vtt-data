@@ -52,8 +52,28 @@ const DATA = [
     language: 'es',
     duration: '01:49',
     provider: 'video'
+  }, {
+    id: 'yt:viadukt',
+    title: 'Aerial recording of trains crossing the Landwasser Viaduct, Switzerland, by Inspiraziun Alpina (Capricorn4049)',
+    rights: 'License: CC-BY-SA-4.0',
+    mediaUrl: 'https://www.youtube.com/watch?v=7bfm3VfkY-I', // 'https://www.youtube.com/watch?v=9-CIUxi-9Ec',
+    altMediaUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/72/Landwasserviadukt%2C_aerial_video.webm', // ?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original',
+    trackUrl: import.meta.resolve('./tracks/wm-landwasserviadukt-aerial-video.en.vtt'),
+    language: 'en',
+    moreUrl: 'https://commons.wikimedia.org/wiki/File:Landwasserviadukt,_aerial_video.webm',
+    searchUrl: 'https://commons.wikimedia.org/w/?title=Special%3AMediaSearch&type=video&search=train',
+    note: 'file size: 296.14 MB',
+    duration: '02:50',
+    provider: 'youtube',
   }
 ];
+
+/*
+https://commons.wikimedia.org/wiki/File:Steam_locomotive_Train_Dorset_Cost_Express_No.4492.webm
+https://commons.wikimedia.org/wiki/File:1137-Landwasser.webm
+https://www.europeana.eu/en/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_128939
+https://www.europeana.eu/en/item/2051906/data_euscreenXL_https___www_openbeelden_nl_media_132736
+*/
 
 function findVideo (query) {
   return DATA.find((it) => it.id === query);
